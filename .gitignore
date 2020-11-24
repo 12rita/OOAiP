@@ -1,0 +1,7 @@
+/node_modules
+/web
+!/web/.gitkeep
+/.idea
+/bin/cmd/syncer
+/.vscode
+/temp
