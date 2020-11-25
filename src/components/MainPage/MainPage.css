@@ -1,13 +1,8 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url("static/bg.png");
-    background-size: cover;
 
-}
 /*.wrapper{*/
 /*    position:relative;*/
-/*    */
+/*    !*background-image: url("static/bg.png");*!*/
+/*    background-size: cover;*/
 /*    width: 100%;*/
 /*    min-height: 1080px;*/
 /*    margin: 0;*/
@@ -25,3 +20,14 @@ body{
 
 /*    justify-content: center;*/
 /*}*/
+.route{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    background: white;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 4px #26528f;
+    width: 400px;
+    height: 300px;
+}

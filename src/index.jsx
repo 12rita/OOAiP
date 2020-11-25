@@ -1,25 +1,29 @@
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 import './index.css';
-class MainPage extends React.Component {
-    render() {
-        return (
-        <div className="wrapper">
-            <div className="overlay">
-                <form id="form">
-                    <label htmlFor="login">Логин</label><input type="text" id="login" required />
-                    <label htmlFor="password">Пароль</label> <input type="password" id="password" required />
-                    <button>Войти</button>
 
-                </form>
+import SignUp from "src/components/SignUp/SignUp.jsx";
+import MainPage from "src/components/MainPage/MainPage.jsx";
+import SignIn from "src/components/SignIn/SignIn.jsx";
 
-            </div>
-        </div>
-    );
-    }
 
-}
-ReactDOM.render(
-    <MainPage />,
+
+const Main = () => (
+
+        <Switch>
+            <Route exact path='/' component={MainPage}/>
+            <Route path='/signIn' component={SignIn}/>
+            <Route path='/signUp' component={SignUp}/>
+        </Switch>
+
+)
+
+
+ReactDOM.render((
+    <HashRouter>
+        <Main />
+    </HashRouter>),
     document.getElementById('root')
 );
+console.log(MainPage);
