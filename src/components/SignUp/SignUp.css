@@ -1,4 +1,10 @@
 .error{
     border: 1px solid red;
-    background: red;
+}
+.error::after{
+    content: 'Данное имя уже занято';
+    color: red;
+}
+.input{
+    background: #26528f;
 }

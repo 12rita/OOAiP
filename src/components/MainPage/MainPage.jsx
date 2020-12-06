@@ -1,7 +1,8 @@
 import * as React from 'react';
 import './MainPage.css';
-
 import {Link} from 'react-router-dom';
+import {observer} from "mobx-react";
+@observer
 export class  MainPage extends React.Component{
     render() {
         return (
