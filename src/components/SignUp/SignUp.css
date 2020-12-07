@@ -1,10 +1,12 @@
-.error{
+.error input{
     border: 1px solid red;
 }
-.error::after{
+.error:after{
     content: 'Данное имя уже занято';
     color: red;
+    font-size: 14px;
+
 }
-.input{
-    background: #26528f;
+input{
+    margin-bottom: 10px;
 }

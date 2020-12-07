@@ -1,6 +1,12 @@
-import { observable } from 'mobx';
-export default class Store {
+export default class GlobalStore {
 
-    @observable
-    static users = {};
+    users;
+    // bool;
+
+    constructor() {
+        // this.bool = props;
+        this.users = {};
+
+    }
+
 }

@@ -35,3 +35,24 @@ body{
     width: 400px;
     height: 300px;
 }
+button{
+    margin-bottom: 5px;
+}
+
+.error input{
+    border: 1px solid red;
+}
+.login:after{
+    content: 'Пользователя с таким именем не существует';
+    color: red;
+    font-size: 14px;
+
+}
+.password:after{
+    content: 'Неверный пароль';
+    color: red;
+    font-size: 14px;
+}
+input{
+    margin-bottom: 10px;
+}
